@@ -1,0 +1,10 @@
+tf2/*
+TBoard/*
+models/*.h5
+*.h5
+*.bz2
+tensorboard/*
+__pycache__/*
+~$*
+ThermalProGAN_sourcecode/*refine*
+ThermalProGAN_sourcecode/pretrain_model*

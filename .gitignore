@@ -1,0 +1,77 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+*.pyc
+
+# Executables
+*.exe
+*.out
+*.app
+
+## FFpred
+FFpred/SVM*
+
+## large file
+*.uc*
+*.fasta
+*.h5
+*.swp
+*.itp 
+*.gro 
+*.png
+!architectures/*.png
+!ThermalProGAN_sourcecode/training_dataset.tar.bz2
+
+*.bz2
+
+#*.mdp
+
+## gromacs
+*.pdf
+\#*
+*.eps
+*.xpm 
+
+## USEARCH
+USEARCH/*
+
+## tensorflow models
+ThermalProGAN_sourcecode/models/*
+
+## ucluster files
+dataset/*
+
+## others
+ThermalProGAN_sourcecode/tf2/*
+VB_workspace/*
+#analysis_zone/Protein_function_prediction_module/*
+analysis_zone/*
+MD_simulations/*
+function_units_test_zone/*
+ThermalProGAN_sourcecode/pretrain_model/*
+ThermalProGAN_sourcecode/pretrain_model3/*
+note.txt
