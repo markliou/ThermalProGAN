@@ -1,4 +1,4 @@
-# ThermalGen
+# ThermalProGAN
 ThermalGen is an example application of Sequence-Based Unpaired-Sample of Novel Protein Inventor (SUNI) which is a CycleGan based architecture for generating the protein sequences with target functions.
 
 This repository contains a Tensorflow implementation of SUNI algorithm which means the users can use the seqeunce dataset instead of the thermal-stable protein sequences used in ThermalGen for generating the proteins with the target funtions.  
