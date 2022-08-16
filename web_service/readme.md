@@ -4,6 +4,10 @@ This section tell how to build the server for translating the normal proteins to
 The website is buit using the FLASK module of python. 
 The model can be download from the [pCloud](https://u.pcloud.link/publink/show?code=XZYQg0VZknUTIn8gAY0bb9v7lsoOmVMC9IK7). The model should put under *model* folder.
 
+# working enviroments
+1. Ubuntu
+2. Docker 
+
 # creating service using docker
 ```shell
 # build the docker image 
@@ -16,6 +20,5 @@ sudo docker pull markliou/thermalproganweb
 Initiating the web service:
 ```shell
 sudo docker run -it -v `pwd`:/workspace -p 8088:8088 markliou/thermalproganweb python3 web_service.py
-# http://xxx.xxx.xxx.xxx:8088
 ```
-You can open the web page from the browser. 
+You can open the web page from the browser. The default port is 8088, so you can open the web page by opening the http://xxx.xxx.xxx.xxx:8088 if your IP address is xxx.xxx.xxx.xxx .
