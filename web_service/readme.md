@@ -2,7 +2,7 @@ ThermalProGAN web service
 ================================================================
 This section tell how to build the server for translating the normal proteins to their thermal stable form.  
 The website is buit using the FLASK module of python. 
-The model can be download from the [pCloud](https://u.pcloud.link/publink/show?code=XZYQg0VZknUTIn8gAY0bb9v7lsoOmVMC9IK7). The model should put under *model* folder.
+The model can be download from the [pCloud](https://u.pcloud.link/publink/show?code=XZYQg0VZknUTIn8gAY0bb9v7lsoOmVMC9IK7). The model should put under *model* folder. (if you don't have the *model* folder, please create it.)
 
 # working enviroments
 1. Ubuntu

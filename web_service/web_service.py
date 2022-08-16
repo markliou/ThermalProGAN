@@ -17,18 +17,33 @@ def index():
         oseq = flask.request.values['seq']
         oseq = oseq.upper()
 
-        candidate_seq = sh.seq2index(oseq.upper())
-        candidate_seq = tf.keras.preprocessing.sequence.pad_sequences([candidate_seq], value=0, maxlen=seq_len)
-        candidate_seq = tf.one_hot(candidate_seq, depth=21)
+        if(len(oseq) > 30):
+            candidate_seq = sh.seq2index(oseq.upper())
+            candidate_seq = tf.keras.preprocessing.sequence.pad_sequences([candidate_seq], value=0, maxlen=seq_len)
+            candidate_seq = tf.one_hot(candidate_seq, depth=21)
 
-        seq = sh.index2seq(tf.argmax(ThermalGen(candidate_seq), axis=-1))[0]
-        seq = seq.replace('-', '')
+            seq = sh.index2seq(tf.argmax(ThermalGen(candidate_seq), axis=-1))[0]
+            seq = seq.replace('-', '')
+        pass
     pass
 
     if not seq:
         oseq = seq = "Sequence information is not ready"
     pass
-    return flask.render_template('index.html', seq=seq, oseq=oseq)
+    return flask.render_template('index.html', seq=ChangeLine(seq), oseq=ChangeLine(oseq))
+pass
+
+def ChangeLine(seq):
+    cnt = 0
+    newSeqList = []
+    for residue in seq:
+        cnt += 1
+        newSeqList.append(residue)
+        if cnt % 100 == 0:
+            newSeqList.append("\n")
+        pass
+    pass
+    return "".join(newSeqList)
 pass
 
 if __name__ == '__main__':
