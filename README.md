@@ -9,7 +9,7 @@ The source codes are located at the *ThermalGen_sourcecode* folder. The files ar
 
 *  **SUNI.py** : The architecture of SUNI. The training parameters and loss function of ThermalGen are recorded in this file. The neural networks are constructed by using Tensorflow mainly.
 *  **sequence_handler.py** : The sequence manipulating module, including the one-hot handling, sequence handling (mainly based on Biopython).
-*  **Inference.py** : This file give an example to inferencing protein by using ThermalGen. But the model file is too huge to provide by GitHub.
+*  **Inference.py** : This file give an example to inferencing protein by using ThermalGen.
 *  **main.py** : The main function to train ThermalGen
 *  **Dockerfile** : The working enviroment for SUNI. The docker image can also be downloaded from DockerHub. The detail step will be given below.
 
