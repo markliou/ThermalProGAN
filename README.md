@@ -3,7 +3,7 @@ ThermalGen is an example application of Sequence-Based Unpaired-Sample of Novel 
 
 This repository contains a Tensorflow implementation of SUNI algorithm which means the users can use the seqeunce dataset instead of the thermal-stable protein sequences used in ThermalGen for generating the proteins with the target funtions.  
 
-[PDF](http://https://github.com/markliou/ThermalProGAN/manuscript.pdf)
+[PDF](https://github.com/markliou/ThermalProGAN/blob/main/manuscript.pdf)
 
 ## workflow
 The source codes are located at the *ThermalGen_sourcecode* folder. The files are introduced below.
