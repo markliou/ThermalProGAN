@@ -45,6 +45,7 @@ FFpred/SVM*
 *.png
 !architectures/*.png
 !ThermalProGAN_sourcecode/training_dataset.tar.bz2
+!manuscript.pdf
 
 *.bz2
 
